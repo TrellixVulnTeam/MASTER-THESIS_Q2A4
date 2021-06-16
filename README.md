@@ -11,16 +11,6 @@ This thesis aims to conduct photometric observations to obtain the physical prop
 
 Specific Aims:
 1.	Select asteroid targets and plan observations. 
-
-		    	                   Brightest 	            LCDB Data
-Number   Name		        Date       Mag   Dec	    Period     Amp   U
----------------------------------------------------------------------------------------------
-332446    2008     AF4	     01 09.8     14.3   +13
-174050    2002     CC19	     02 03.8     14.0   +17
-231937    2001     FO32
-163243    2002     FB3           04 12.7    14.8    +9         6.231      0.19     2 
-450263    2003     WD158    06 20.0    14.0    -9
-
 2.	Perform photometric observation with FITS images. 
 3.	Build asteroid lightcurves and determine rotation periods and amplitudes of selected asteroids using the Tycho software and python.
 4.	Extract data set from the Asteroid Lightcurve Photometric Database (ALCDEF) and Minor Planet Observation.
