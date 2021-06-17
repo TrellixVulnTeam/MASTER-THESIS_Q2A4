@@ -1,0 +1,35 @@
+
+		    	 Brightest 		     LCDB Data
+Number Name		Date 	 Mag	Dec	Period	 Amp   U
+-----------------------------------------------------------------
+332446 2008 AF4		01 09.8  14.3   +13
+174050 2002 CC19	02 03.8  14.0   +17
+231937 2001 FO32
+163243 2002 FB3       	04 12.7  14.8   +9     	6.231    0.19  2 
+450263 2003 WD158     	06 20.0  14.0   -9 
+
+
+
+
+We present lists of asteroid photometry opportunities for objects reaching a favorable apparition and have 
+no or poorly-defined  lightcurve  parameters.  Additional  data on  these  objects  will  help  with  shape  
+and  spin  axis modeling  using  lightcurve  inversion.  We  also  include lists  of  objects  that  will  or  
+might  be  radar  targets. Lightcurves  for  these  objects  can  help  constrain  pole solutions and/or 
+remove rotation period ambiguities that might come from using radar data alone. 
+
+
+In the first three sets of tables, “Dec” is the declination and “U” is the quality code of the lightcurve. 
+
+
+Additional data on these objects will help with shape and spin axis modeling using lightcurve inversion.
+
+
+Objects with U = 3– or 3 are excluded from this list since they will likely appear in the list for shape 
+and spin axis modeling. Those asteroids rated U = 1 should be given higher priority over those rated U = 2 or 2+, 
+but not necessarily over those with no period. On the other hand, do not overlook asteroids with U= 2/2+ on the 
+assumption that the period is sufficiently established. Regardless, do not let the existing period influence your 
+analysis since even highly-rated result have been proven wrong at times. Note that the lightcurve  amplitude  in  
+the  tables  could  be  more  or  less  than what’s given. Use the listing only as a guide.
+
+
+**** A Practical Guide to Lightcurve Photometry and Analysis ***
