@@ -10,7 +10,7 @@ General Purpose:
 This thesis aims to conduct photometric observations to obtain the physical properties of selected near-Earth asteroids (NEAs) from publicly available photometric data. The properties include the rotation period, the amplitude of the light curve, shape and spin axis orientation.
 
 Specific Aims:
-1.	Select asteroid targets and plan observations. 
+1.	Select asteroid targets and plan observations period data. 
 2.	Perform photometric observation with FITS images. 
 3.	Build asteroid lightcurves and determine rotation periods and amplitudes of selected asteroids using the Tycho software and python.
 4.	Extract data set from the Asteroid Lightcurve Photometric Database (ALCDEF) and Minor Planet Observation.
