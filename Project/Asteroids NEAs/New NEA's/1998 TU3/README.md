@@ -14,7 +14,7 @@ Orbit type: **Aten**
 
 1+ KM Near-Earth Object
 
-Left aligned Header | Right aligned Header 
+Parameter | Value
 | :--- | ---:
 JD of orbit computation		                |	  2456966.803202
 perihelion JD uncertainty (days)          |	  1.0889E-05
