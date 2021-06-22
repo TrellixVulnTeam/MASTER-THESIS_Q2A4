@@ -2,9 +2,9 @@
 
 Discovered at Socorro on 1998-10-13 by LINEAR.
 
-first observation date used	1982-12-04.0
+First observation date used	1982-12-04.0
 
-last observation date used	2020-10-03.0
+Last observation date used	2020-10-03.0
 
 1466 total observations
 
