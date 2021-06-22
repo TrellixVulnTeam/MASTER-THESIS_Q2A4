@@ -15,13 +15,13 @@ Orbit type: **Aten**
 1+ KM Near-Earth Object
 
 | :--- | ---:
-JD of orbit computation		                |	2456966.803202
-perihelion JD uncertainty (days)          |	1.0889E-05
-argument of perihelion uncertainty (°)    |	5.2113E-05
-ascending node uncertainty (°)	          |	5.2183E-05
-inclination uncertainty (°)	              |	1.9465E-06
-eccentricity uncertainty	                |	6.2241E-08
-perihelion distance uncertainty (AU)	    | 4.9004E-08
+JD of orbit computation		                |	  2456966.803202
+perihelion JD uncertainty (days)          |	  1.0889E-05
+argument of perihelion uncertainty (°)    |	  5.2113E-05
+ascending node uncertainty (°)	          |	  5.2183E-05
+inclination uncertainty (°)	              |	  1.9465E-06
+eccentricity uncertainty	                |	  6.2241E-08
+perihelion distance uncertainty (AU)	    |   4.9004E-08
 
 ## Period
 ALCDEF 		    **2.3750 Hours**
