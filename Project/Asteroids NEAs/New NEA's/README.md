@@ -10,7 +10,7 @@ The added NEAs at this moment provide ease of the observation data required. The
 4. perform the photometry analysis after loading the ephemeris data
 5. Lastly, select the data of consecutive nights based on a specific month of observations and create a light curve both in raw and phase plot. After that, I was finding the period of the asteroid will be possible.
 
-# DATA COMPARISON
+## DATA COMPARISON
 
 The period data obtained for these asteroids is compared by the data found on both the **MPO server** and **ALCDEF**.
 

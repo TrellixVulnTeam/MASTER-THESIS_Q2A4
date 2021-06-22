@@ -1,11 +1,27 @@
-# IVAR
+# (1627) Ivar = 1929 SH = 1957 NA = 1957 XA
 
-Ivar is an asteroid, a large rock that orbits the Sun mainly between the orbits of Mars and Jupiter. They tend to be an irregular shaped but Ceres asteroid is known to be spherical but because it doesn't clear its path round the Sun, it is only a dwarf planet.
-Ivar is an **Amor** asteroid, these asteroids are ones whose path crosses that of Mars but not the Earth. They are potential hazardous asteroids, a risk they could collide, but the risk is very tiny. They are named after the first of its class to be identified, Amor. Some of these asteroids are referred as as Alinda asteroids, after the first of the group to be discovered - Alinda. It has an alternative name which is 1929 SH. Ivar was discovered on 1929-09-25 by E. Hertzsprung. The absolute magnitude of the object is 12.67 which is the brightness of the object. A higher absolute magnitude means that the object is faint whereas a very low number means it is very bright.
-The albedo of the object is 1. The Albedo is the amount of radiation that is reflected back into space by the object.
-The Aphelion of the object is 2.603 A.U. which is the point in the orbit that is furthest from the object that it is orbit. At this point, it will then return to the orbit target. The Perihelion of the object is 1.124 A.U. which is the point in the orbit that is closest to the object that it is orbit around. The Longitude of Ascending Node of the object is 133.1 degrees. It is the angle between the Reference Direction and the Ascending Node. It is normally represented by the Greek letter Ω. The ascending node is the point in which the object passes north. The descending node is the southern.
-The Argument of Perihelion is 167.8. It is the angle along the orbit of a planet or other Solar System object as measured from the ascending node (analogous to right ascension and longitude) Ref:Hawaii. The mean anomaly is 334.0, is the angular distance of the planet from the perihelion or aphelion. Ref:Dictionary.The Semi-Major Axis of the orbit is 1.863 (A.U.), which is the furthest point from the center to the edge of an elliptical point. The orbital inclination, the angle at which Ivar orbits in relation to the orbital plane is 8.5 degrees. The orbital eccentricity is 0.397, it is the degree at which Ivar orbits close to a circular (0) orbit as opposed to an elliptical (1) orbit.
+Discovered at Johannesburg on 1929-09-25 by E. Hertzsprung.
+(1627) Ivar = 1929 SH
 
+first observation date used	1929-09-25.0
+last observation date used	2020-06-22.0
+7367 total observations
 
+## Orbit
 
-[link to article](https://www.universeguide.com/asteroid/580/ivar)
+Orbit type: **Amor**
+1+ KM Near-Earth Object
+
+JD of orbit computation			2456966.899130
+perihelion JD uncertainty (days)	4.0367E-06
+argument of perihelion uncertainty (°)	6.9160E-06
+ascending node uncertainty (°)		6.7493E-06
+inclination uncertainty (°)		1.1572E-06
+eccentricity uncertainty		9.7847E-09
+perihelion distance uncertainty (AU)	1.8304E-08
+
+## Period
+ALCDEF 		**4.7950  Hours**
+Light Curve	**4.7964  Hours**
+
+![Screenshot](phased plot 1.png)
