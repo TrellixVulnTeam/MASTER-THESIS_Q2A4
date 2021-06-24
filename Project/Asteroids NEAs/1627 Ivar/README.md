@@ -31,4 +31,4 @@ ALCDEF 		**4.7950  Hours**
 
 Light Curve	**4.7964  Hours**
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/ec5c7cce018040ba7099341098e2252f723ba3f9/Project/Asteroids%20NEAs/test%20asteroid%2016277/Output%20Ivar/phased%20plot%201.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/b6423479cec4b047d649aaefb979d2f6a51c4314/Project/Asteroids%20NEAs/1627%20Ivar/Output%20Ivar/phaseplot.pnghttps://github.com/renefiedel/MASTER-THESIS/blob/b6423479cec4b047d649aaefb979d2f6a51c4314/Project/Asteroids%20NEAs/1627%20Ivar/Output%20Ivar/phaseplot.png)
