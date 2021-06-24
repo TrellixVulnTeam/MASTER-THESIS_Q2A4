@@ -29,6 +29,6 @@ perihelion distance uncertainty (AU)  |	1.8304E-08
 ## Period
 ALCDEF 		**4.7950  Hours**
 
-Light Curve	**4.7964  Hours**
+Light Curve	**4.7950  Hours**
 
 ![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/b6423479cec4b047d649aaefb979d2f6a51c4314/Project/Asteroids%20NEAs/1627%20Ivar/Output%20Ivar/phaseplot.png)
