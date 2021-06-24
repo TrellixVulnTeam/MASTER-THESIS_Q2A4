@@ -1,0 +1,5 @@
+#!/home/renefiedel/Documents/MASTER-THESIS/venv/bin/python
+from spline.application import main
+
+if __name__ == "__main__":
+    main()
