@@ -2,18 +2,19 @@ import matplotlib.pyplot as plt
 import pandas as pd
 
 df = pd.read_csv('2003RP8.csv')
+print(df)
+df2 = df.sort_values(by="Phase")
+print(df2)
 
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.scatter(x=df['Phase'], y=df['Mag'], s=10, c='b', marker="+", label='5 Nights of Magnitude')
-ax.scatter(x=df['Phase'], y=df['Curve'], s=10, c='r', label='6th order curve')
+ax = df2.plot(x="Phase", y="Mag", kind="scatter", yerr="MagErr", s=70,
+              color="dimgray", marker=".", label="Data of 5 nights", figsize=(10, 6))
+df2.plot(x="Phase", y="Curve", ax=ax, color="C3", lw=3, label="Fit (6th order)")
+
 plt.gca().invert_yaxis()
-plt.xlabel("Phase")
-plt.ylabel("Magnitude")
-plt.title('2001 SG276 Light Curve')
-plt.legend(loc='best')
-plt.grid(b=True, which='major', color='#666666', linestyle='-')
-plt.minorticks_on()
-plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
-
+plt.title('2003 RP8 Light Curve', fontweight='bold')
+plt.legend(loc='upper center')
+# plt.grid(b=True, which='major', color='#666666', linestyle='-')
+# plt.minorticks_on()
+# plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
+plt.savefig('New_light_curve_2003RP8.png', dpi=1200)
 plt.show()
-fig.savefig('Final_light_curve_2003RP8.png', dpi=fig.dpi)
