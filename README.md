@@ -1,3 +1,4 @@
+![logo]()
 # MASTER-THESIS
 
 

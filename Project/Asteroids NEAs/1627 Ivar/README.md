@@ -10,6 +10,10 @@ Last observation date used	2020-06-22.0
 
 7367 total observations
 
+## Data Source
+
+Fits images
+
 ## Orbit
 
 Orbit type: **Amor**
@@ -32,3 +36,12 @@ ALCDEF 		**4.7950  Hours**
 Light Curve	**4.7950  Hours**
 
 ![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/b6423479cec4b047d649aaefb979d2f6a51c4314/Project/Asteroids%20NEAs/1627%20Ivar/Output%20Ivar/phaseplot.png)
+
+Change in magnitude
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/1627%20Ivar/Output%20Ivar/New_light_curve_Ivar1627.png)
+
+### Periodogram
+
+![Screenshot](Project/Asteroids NEAs/1627 Ivar/Output Ivar/period.png)
+

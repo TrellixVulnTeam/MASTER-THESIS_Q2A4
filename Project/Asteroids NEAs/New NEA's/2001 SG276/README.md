@@ -8,6 +8,10 @@ Last observation date used	2021-01-13.0
 
 847 total observations 
 
+## Data Source
+
+ALCDEF Dataset
+
 ## Orbit
 
 Orbit type: **Amor**
@@ -30,3 +34,11 @@ ALCDEF 		**5.090  Hours**
 Light Curve	**5.0906 Hours**
 
 ![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/ec5c7cce018040ba7099341098e2252f723ba3f9/Project/Asteroids%20NEAs/New%20NEA's/2001%20SG276/Light%20curve.png)
+
+Change in magnitude
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20SG276/New_light_curve_2001SG276.png)
+
+### Periodogram
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20SG276/periodogram%20log.png)
