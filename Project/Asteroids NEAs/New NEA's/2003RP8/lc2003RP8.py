@@ -11,7 +11,7 @@ print(df2)
 
 ax = df2.plot(
     x="Phase", y="Mag",
-    kind="line", yerr="MagErr", title="Data of 5 Nights",
+    kind="line", yerr="MagErr",
     linestyle="", marker="o", label='Data of 5 nights',
     capthick=1, ecolor="dimgray", linewidth=1, figsize=(10, 6), zorder=1
 )
