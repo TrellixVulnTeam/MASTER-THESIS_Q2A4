@@ -43,5 +43,5 @@ Change in magnitude
 
 ### Periodogram
 
-![Screenshot](Project/Asteroids NEAs/1627 Ivar/Output Ivar/period.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids NEAs/1627 Ivar/Output Ivar/period.png)
 
