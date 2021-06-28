@@ -18,7 +18,7 @@ matplotlib.rcParams.update({'errorbar.capsize': 2})
 ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
               marker="o", label="Data of 4 nights", capthick=1, ecolor="dimgray",
               linewidth=1, figsize=(10, 6), zorder=1)
-plt.plot(X_, Y_, color="C3", lw=2, label="Fit (6th order)", zorder=2)
+plt.plot(X_, Y_, color="C3", lw=3, label="Fit (6th order)", zorder=2)
 plt.gca().invert_yaxis()
 plt.xlabel("Phase [Period = 6.7970 H")
 plt.ylabel("Mag")
