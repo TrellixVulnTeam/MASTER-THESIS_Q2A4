@@ -1,3 +1,4 @@
+import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -13,12 +14,13 @@ X_Y_Spline = make_interp_spline(x, y)
 X_ = np.linspace(x.min(), x.max(), 500)
 Y_ = X_Y_Spline(X_)
 
-ax = df2.plot(x="Phase", y="Mag", kind="scatter", yerr="MagErr",
-              s=70, marker=".", label="Data of 4 nights",
-              color="dimgray", figsize=(10, 6))
-plt.plot(X_, Y_, color="C3", lw=2, label="Fit (6th order)")
+matplotlib.rcParams.update({'errorbar.capsize': 2})
+ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
+              marker="o", label="Data of 4 nights", capthick=1, ecolor="dimgray",
+              linewidth=1, figsize=(10, 6), zorder=1)
+plt.plot(X_, Y_, color="C3", lw=2, label="Fit (6th order)", zorder=2)
 plt.gca().invert_yaxis()
-plt.xlabel("Phase")
+plt.xlabel("Phase [Period = 6.7970 H")
 plt.ylabel("Mag")
 plt.title('2001 UY4 Light Curve', fontweight="bold")
 plt.legend(loc='best')
