@@ -1,19 +1,34 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+from scipy.interpolate import make_interp_spline
+import numpy as np
+import matplotlib
+
 
 df = pd.read_csv('Light curve.csv')
+print(df)
+df2 = df.sort_values(by="Phase")
+print(df2)
+x = df2['Phase']
+y = df2['Curve']
+X_Y_Spline = make_interp_spline(x, y)
+X_ = np.linspace(x.min(), x.max(), 500)
+Y_ = X_Y_Spline(X_)
 
-fig, ax = plt.subplots(figsize=(10, 6))
-ax.scatter(x=df['Phase'], y=df['Mag'], s=10, c='b', marker="+", label='5 Nights of Magnitude')
-ax.scatter(x=df['Phase'], y=df['Curve'], s=10, c='r', label='6th order curve')
+matplotlib.rcParams.update({'errorbar.capsize': 2})
+ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
+              marker="o", label="Data of 5 nights", capthick=1, ecolor="dimgray",
+              linewidth=1, figsize=(10, 6), zorder=1)
+plt.plot(X_, Y_, color="C3", lw=3, label="Fit (4th order)", zorder=2)
+
 plt.gca().invert_yaxis()
-plt.xlabel("Phase")
-plt.ylabel("Magnitude")
-plt.title('2001 SG276 Light Curve')
+plt.xlabel("Phase [Period = 5.0906 H")
+plt.ylabel("Mag")
+plt.title('2001 SG276 Light Curve', fontweight="bold")
 plt.legend(loc='best')
-plt.grid(b=True, which='major', color='#666666', linestyle='-')
-plt.minorticks_on()
-plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
-
+# plt.grid(b=True, which='major', color='#666666', linestyle='-')
+# plt.minorticks_on()
+# plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
+plt.savefig('New_light_curve_2001SG276.png', dpi=1000)
+# plt.savefig('Final_light_curve 2000QL7.eps', format='eps', dpi=1000)
 plt.show()
-fig.savefig('Final_light_curve_2001SG276.png', dpi=fig.dpi)
