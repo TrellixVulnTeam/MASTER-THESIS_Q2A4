@@ -20,7 +20,6 @@ Near-Earth Object
 
 Parameter | Value
 | :--- | ---:
-JD of orbit computat
 JD of orbit computation		|	2457429.572907
 perihelion JD uncertainty (days) |	1.2878E-04
 argument of perihelion uncertainty (°) |	2.7238E-05
