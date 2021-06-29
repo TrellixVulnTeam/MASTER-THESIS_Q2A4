@@ -8,6 +8,10 @@ Last observation date used	2019-12-20.0
 
 462 total observations
 
+## Data Source
+
+ALCDEF Dataset
+
 ## Orbit
 
 Orbit type: **Apollo**
@@ -30,3 +34,12 @@ ALCDEF 		**6.8020  Hours**
 Light Curve	**6.7970 Hours**
 
 ![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/ec5c7cce018040ba7099341098e2252f723ba3f9/Project/Asteroids%20NEAs/New%20NEA's/2001%20UY4/light%20curve.png)
+
+Change in magnitude
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20UY4/New_light_curve_2001UY4.png)
+
+### Periodogram
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20UY4/periodogram%20log.png)
+

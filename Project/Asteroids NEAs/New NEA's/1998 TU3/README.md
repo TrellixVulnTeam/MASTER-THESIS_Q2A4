@@ -8,6 +8,10 @@ Last observation date used	2020-10-03.0
 
 1466 total observations
 
+## Data Source
+
+ALCDEF Dataset
+
 ## Orbit
 
 Orbit type: **Aten**
@@ -30,3 +34,12 @@ ALCDEF 		    **2.3750 Hours**
 Light Curve	  **2.3777 Hours**
 
 ![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/bbd2297a37eeabc895341f0800760fc8a96c3c90/Project/Asteroids%20NEAs/New%20NEA's/1998%20TU3/Light%20curve.png)
+
+Change in magnitude
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/1998%20TU3/Final_light_curve_1998TU3.png)
+
+### Periodogram
+
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/1998%20TU3/periodogram%20log.png)
+

@@ -1,3 +1,4 @@
+![logo](https://github.com/renefiedel/MASTER-THESIS/blob/93bff1072399e00357000df93798d353998d1d96/Reference%20Data/uc3m.png)
 # MASTER-THESIS
 
 

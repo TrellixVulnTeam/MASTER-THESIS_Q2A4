@@ -17,11 +17,11 @@ X_Y_Spline = make_interp_spline(x, y)
 X_ = np.linspace(x.min(), x.max(), 500)
 Y_ = X_Y_Spline(X_)
 
-ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", title="Data", linestyle="",
+ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", title="Data", linestyle="", label='Data of 9 nights',
               marker="o", capthick=2, ecolor="dimgray", linewidth=1, figsize=(10, 6), zorder=1)
 # ax = df2.plot(x="Phase", y="Mag", kind="scatter", yerr="MagErr", s=70, marker=".",
 # label="Data of 5 nights", color="dimgray", figsize=(10, 6))
-plt.plot(X_, Y_, color="C3", lw=3, label="Fit (6th order)", zorder=2)
+plt.plot(X_, Y_, color="C3", lw=3, label="Fit (3rd order)", zorder=2)
 plt.xlabel("Phase [Period = 2.3750 H]")
 plt.ylabel("Mag")
 plt.title('2000 QL7 Light Curve', fontweight='bold')

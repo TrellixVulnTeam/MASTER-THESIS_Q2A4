@@ -22,7 +22,7 @@ Y_ = X_Y_Spline(X_)
 ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
               marker="o", label="Data of 5 nights", capthick=1, ecolor="dimgray",
               linewidth=1, figsize=(10, 6), zorder=1)
-plt.plot(X_, Y_, color="C3", lw=3, label="Fit (6th order)", zorder=2)
+plt.plot(X_, Y_, color="C3", lw=3, label="Fit (4th order)", zorder=2)
 
 # ax.scatter(xdata, ydata, s=10, c='b', marker=".", label='5 Nights of Magnitude')
 # ax = df.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="", marker=".",
