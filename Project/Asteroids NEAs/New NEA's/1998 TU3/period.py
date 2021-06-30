@@ -36,7 +36,7 @@ plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
 plt.ylabel('RMSE')
 plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
-# plt.savefig('Periodogram: 1998 TU3.png', dpi=1000)
+plt.savefig('Periodogram: 1998 TU3.svg', dpi=1000)
 # plt.show()
 
 model = LombScargleFast().fit(t, mag, dmag)

@@ -2,9 +2,10 @@ import matplotlib.pyplot as plt
 import pandas as pd
 import matplotlib
 
-
+plt.style.use('seaborn-whitegrid')
 matplotlib.rcParams.update({'errorbar.capsize': 2})
 df = pd.read_csv('2003RP8.csv')
+df3 = pd.read_csv('Periodogram.csv')
 print(df)
 df2 = df.sort_values(by="Phase")
 print(df2)
@@ -27,5 +28,17 @@ plt.legend(loc='upper center')
 # plt.grid(b=True, which='major', color='#666666', linestyle='-')
 # plt.minorticks_on()
 # plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
-plt.savefig('New_light_curve_2003RP8.png', dpi=1200)
+plt.savefig('New_light_curve_2003RP8.svg', dpi=1200)
+
+# periodogram
+time = df3['Period(hours)'] * 24  # convert to hours
+rmse = df3['RMSE']
+fig, ax = plt.subplots(figsize=(10, 6))
+
+plt.plot(time, rmse, '-k')
+plt.xlabel('Hours')
+plt.ylabel('RMSE')
+plt.title('Periodogram: 2000 QL7', fontweight="bold", fontsize=16)
+plt.savefig('Periodogram: 2003RP8.svg', dpi=1000)
+plt.show()
 plt.show()
