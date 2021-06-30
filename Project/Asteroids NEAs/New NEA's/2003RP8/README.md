@@ -41,5 +41,5 @@ Change in magnitude
 
 ### Periodogram
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2003RP8/Periodogram.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/29889d25f66baa7a7b21d5a0047547b551315093/Project/Asteroids%20NEAs/New%20NEA's/2003RP8/Periodogram:%202003RP8.svg)
 
