@@ -20,7 +20,6 @@ Near-Earth Object
 
 Parameter | Value
 | :--- | ---:
-JD of orbit computat
 JD of orbit computation		|	2457429.572907
 perihelion JD uncertainty (days) |	1.2878E-04
 argument of perihelion uncertainty (°) |	2.7238E-05
@@ -38,7 +37,7 @@ Light Curve	**4.2739 Hours**
 
 Change in magnitude
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2003RP8/New_light_curve_2003RP8.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/d707ec2de7f673fb9f66248c9358f46ea5732797/Project/Asteroids%20NEAs/New%20NEA's/2003RP8/New_light_curve_2003RP8.png)
 
 ### Periodogram
 
