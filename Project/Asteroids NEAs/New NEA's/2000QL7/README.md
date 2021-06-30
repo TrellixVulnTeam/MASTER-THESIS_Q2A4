@@ -31,4 +31,4 @@ Change in magnitude plot
 
 ### Periodogram
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2000QL7/new%20linear%20period.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/61972f8a7ba30c3d60971e01b1146959ec12ddd0/Project/Asteroids%20NEAs/New%20NEA's/2000QL7/Periodogram:%202000%20QL7.svg)
