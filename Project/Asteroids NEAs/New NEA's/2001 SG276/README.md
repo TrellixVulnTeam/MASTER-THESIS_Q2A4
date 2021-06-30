@@ -41,4 +41,4 @@ Change in magnitude
 
 ### Periodogram
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20SG276/periodogram%20log.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/ee721437bd812cbd28bb8c119ba63967c348a69f/Project/Asteroids%20NEAs/New%20NEA's/2001%20SG276/Periodogram:%202001%20SG276.svg)
