@@ -37,7 +37,7 @@ Light Curve	**6.7970 Hours**
 
 Change in magnitude
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/2001%20UY4/New_light_curve_2001UY4.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/ac3dc751d467b733b35526eaf875275d3cd94e6c/Project/Asteroids%20NEAs/New%20NEA's/2001%20UY4/New_light_curve_2001UY4.svg)
 
 ### Periodogram
 
