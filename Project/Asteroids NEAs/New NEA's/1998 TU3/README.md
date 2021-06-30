@@ -41,5 +41,5 @@ Change in magnitude
 
 ### Periodogram
 
-![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/5f69380cc7cc047c14598c4f5a218eed997ec0ca/Project/Asteroids%20NEAs/New%20NEA's/1998%20TU3/periodogram%20log.png)
+![Screenshot](https://github.com/renefiedel/MASTER-THESIS/blob/2a43c8ec3b5e6b54738168561b6014242b760593/Project/Asteroids%20NEAs/New%20NEA's/1998%20TU3/Periodogram:%201998%20TU3.svg)
 
