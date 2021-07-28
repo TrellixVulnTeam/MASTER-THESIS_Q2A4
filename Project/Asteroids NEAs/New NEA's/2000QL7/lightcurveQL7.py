@@ -35,13 +35,31 @@ plt.gca().invert_yaxis()
 # plt.minorticks_on()
 # plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
 plt.savefig('Final_light_curve 2000QL7.svg', dpi=1000)
+
 # plt.savefig('Final_light_curve 2000QL7.eps', format='eps', dpi=1000)
+
+
+# def annot_max(time, rmse, ax=None):
+#    xmax = time[np.argmin(rmse)]
+#    ymax = rmse.min()
+#    text = "Period={:.5f}, RMSE={:.5f}".format(xmax, ymax)
+#    if not ax:
+#        ax = plt.gca()
+#    bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
+#    arrowprops = dict(arrowstyle="->", connectionstyle="angle")
+#    kw = dict(xycoords='data', textcoords="axes fraction", arrowprops=arrowprops,
+#              bbox=bbox_props, ha="right", va="bottom")
+#    ax.annotate(text, xy=(xmax, ymax), xytext=(0.94, 0.96), **kw)
+
 
 fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k')
+
+# annot_max(time, rmse)
 plt.xlabel('Hours')
 plt.ylabel('RMSE')
+plt.xlim(2, 4)
 plt.title('Periodogram: 2000 QL7', fontweight="bold", fontsize=16)
-plt.savefig('Periodogram: 2000 QL7.svg', dpi=1000)
+plt.savefig('Periodogram: 2000 QL7 zoom.svg', dpi=1000)
 plt.show()

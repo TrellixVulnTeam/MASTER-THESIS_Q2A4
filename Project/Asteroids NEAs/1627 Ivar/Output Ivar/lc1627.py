@@ -38,5 +38,3 @@ plt.ylabel('RMSE')
 plt.title('Periodogram: 2000 QL7', fontweight="bold", fontsize=16)
 plt.savefig('Periodogram: Ivar1627.svg', dpi=1000)
 plt.show()
-plt.show()
-

@@ -4,9 +4,10 @@ import pandas as pd
 from scipy.interpolate import make_interp_spline
 import matplotlib
 
-
 matplotlib.rcParams.update({'errorbar.capsize': 2})
+plt.style.use('seaborn-whitegrid')
 
+# phase data import
 df = pd.read_csv('Light curve.csv')
 print(df)
 
@@ -37,4 +38,37 @@ plt.legend(loc='best')
 # plt.minorticks_on()
 # plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
 plt.savefig('Final_light_curve_1998TU3.svg', dpi=1000)
+
+# period data import
+df3 = pd.read_csv('periodogram log.csv')
+
+time = df3['Period(hours)'] * 24  # convert to hours
+rmse = df3['RMSE']
+
+fig, ax = plt.subplots(figsize=(10, 6))
+
+plt.plot(time, rmse, '-k')
+
+
+# def annot_max(time, rmse, ax=None):
+#    xmax = time[np.argmin(rmse)]
+#    ymax = rmse.min()
+#    text = "Period={:.5f}".format(xmax, ymax)
+#    if not ax:
+#        ax = plt.gca()
+#    bbox_props = dict(boxstyle="square,pad=0.3", fc="w", ec="k", lw=0.72)
+#    arrowprops = dict(arrowstyle="->")
+#    kw = dict(xycoords='data', textcoords="offset points",
+#              arrowprops={}, bbox=bbox_props)
+#    ax.annotate(text, xy=(xmax, ymax), xytext=(0.94, 0.96), **kw)
+
+
+# annot_max(time, rmse)
+
+plt.xlabel('Hours')
+plt.ylabel('RMSE')
+plt.xlim(2, 4)
+plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
+plt.savefig('Periodogram: 1998 TU3 zoom.svg', dpi=1000)
+
 plt.show()
