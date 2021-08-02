@@ -1,0 +1,31 @@
+25798 minor planets loaded
+
+(1627) IVAR
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
+
+(18172) 2000 QL7
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
+
+(66146) 1998 TU3
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
+
+(194126) 2001 SG276
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
+
+(194268) 2001 UY4
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
+
+(455432) 2003 RP8 
+RA 06h 51m 07.74s
+DEC +25deg 31' 42.5"
+3.00126 au  au
