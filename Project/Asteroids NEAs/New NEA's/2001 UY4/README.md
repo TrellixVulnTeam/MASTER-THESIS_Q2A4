@@ -10,23 +10,23 @@ Last observation date used	2019-12-20.0
 
 ## Data Source
 
-ALCDEF Dataset
+ALCDEF Dataset, MPC and JPL Horizons
 
-## Orbit
+## Initial Orbit Determination
 
 Orbit type: **Apollo**
 
 Potentially Hazardous NEA
 
-Parameter | Value
-| :--- | ---:
-JD of orbit computation		|	2455934.327255
-perihelion JD uncertainty (days)   |	1.0463E-05
-argument of perihelion uncertainty (°) |	6.6315E-05
-ascending node uncertainty (°)	  |	6.6976E-05
-inclination uncertainty (°)	|	3.4045E-06
-eccentricity uncertainty	|	3.9152E-08
-perihelion distance uncertainty (AU)  |	5.6923E-08
+Parameter | Gibbs Value | Lambert Value | MPC | JPL
+| :--- | ---:| :--- | ---:| ---:
+ Eccentricity | 0.788484 | 0.78763 | 0.7874989 | 0.7875247590730706
+ Inclination (deg) | 5.42927 | 5.42927 | 5.43727 | 5.431398047041429
+ RA of ascending node (deg) | 160.848 | 160.848 | 160.75715 | 160.9394416839746
+ Argument of perigee (deg) | 107.849 | 107. 891 | 107.74904 | 107.5466553945647
+ True anomaly (deg) | 172.072 | 172.03 | | 172.05
+ Semimajor axis (AU) | 1.45392 | 1.4548 | 1.4530000 | 1.453428593715595 
+ Period (years) | 1.7447 | 1.74646 | 1.75 | 1.75226
 
 ## Period
 ALCDEF 		**6.8020  Hours**
