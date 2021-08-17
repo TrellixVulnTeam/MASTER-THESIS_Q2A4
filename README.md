@@ -15,4 +15,4 @@ This thesis aims to conduct photometric observations and orbit determination to 
 3. Build asteroid lightcurves and determine rotation periods using the Tycho software and Python.
 4. Obtain ephemeris data from NASA's JPL, especially the state vectors and observation period for orbit determination (using Gibbs and Lambert's problem methods).
 5. Analyse the period data and compare results with the ones from the MPC.
-6. Perform orbit determination to obtain the orbital elements and compare the same with the ones from MPC.
+6. Perform preliminart orbit determination to obtain the orbital elements and compare the outut with the ones from MPC.
