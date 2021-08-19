@@ -49,6 +49,7 @@ Parameter | Gibbs Value | Lambert Value | MPC
  True anomaly (deg) | 76.4222 | 78.7853 | 
  Semimajor axis (AU) | 0.801747 | 0.77193 | 0.7874000 
  Period (years) | 0.714442 | 0.674959 | 0.7
+ 
 ## Period
 ALCDEF 		    **2.3750 Hours**
 
