@@ -18,15 +18,38 @@ Orbit type: **Amor**
 
 Near-Earth Object
 
-Parameter | Value
-| :--- | ---:
-JD of orbit computation		|	2456639.528250
-perihelion JD uncertainty (days)  |	2.1475E-05
-argument of perihelion uncertainty (°) |	6.9449E-06
-ascending node uncertainty (°)	|	2.5374E-06
-inclination uncertainty (°)	|	9.7116E-06
-eccentricity uncertainty		3.0588E-08
-perihelion distance uncertainty (AU)  |	4.4200E-08
+The state vectors (from JPL) used for both the Gibbs and Lambert's problem are:
+
+- 2459436.500000000 = A.D. 2021-Aug-10 00:00:00.0000 TDB 
+ X =-1.156528433091796E+00 Y = 1.149847675000554E-01 Z = 3.774618314954212E-01
+
+- 2459437.500000000 = A.D. 2021-Aug-11 00:00:00.0000 TDB 
+ X =-1.156521834138001E+00 Y = 9.945634486439929E-02 Z = 3.710795460654758E-01
+ 
+- 2459438.500000000 = A.D. 2021-Aug-12 00:00:00.0000 TDB 
+ X =-1.156323708101620E+00 Y = 8.391208853997528E-02 Z = 3.646354085833321E-01
+ 
+
+Where the period between each observation is 24 hours (86400.0s)
+
+    JDTDB    Julian Day Number, Barycentric Dynamical Time
+    
+      X      X-component of position vector (au)
+      
+      Y      Y-component of position vector (au)
+      
+      Z      Z-component of position vector (au)
+
+Parameter | Gibbs Value | Lambert Value | MPC 
+| :--- | ---:| :--- | ---:
+ Eccentricity               | 0.244856 | 0.254235 | 0.2476960
+ Inclination (deg)          | 26.5819 | 26.5811 | 26.67708 
+ RAAN (deg)                 | 34.7938 | 34.7954 | 35.11623 
+ Argument of perigee (deg)  | 202.22 | 199.399 | 200.37427 
+ True anomaly (deg)         | 294.899 | 297.719 | 
+ Semimajor axis (AU)        | 1.43003 | 1.45694 | 1.4326700 
+ Period (years)             | 1.70187 | 1.75015 | 1.71
+
 
 ## Period
 ALCDEF 		**5.090  Hours**
