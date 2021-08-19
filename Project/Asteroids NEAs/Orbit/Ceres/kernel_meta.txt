@@ -1,0 +1,16 @@
+\begintext
+
+    This meta file contains the relative paths to all needed SPICE kernels.
+    For each tutorial we will set up an individual kernel_meta.txt. A common
+    meta file could be easily stored in the main folder (next to the _kernel
+    directory), however it would be over-loaded at some point.
+
+\begindata
+
+KERNELS_TO_LOAD = (
+    '/home/renetus/PycharmProjects/MASTER-THESIS/Project/Asteroids NEAs/Orbit/Ceres/_kernels/spk/de432s.bsp',
+    '/home/renetus/PycharmProjects/MASTER-THESIS/Project/Asteroids NEAs/Orbit/Ceres/_kernels/spk/codes_300ast_20100725.bsp',
+    '/home/renetus/PycharmProjects/MASTER-THESIS/Project/Asteroids NEAs/Orbit/Ceres/_kernels/_misc/codes_300ast_20100725.tf',
+    '/home/renetus/PycharmProjects/MASTER-THESIS/Project/Asteroids NEAs/Orbit/Ceres/_kernels/lsk/naif0012.tls',
+    '/home/renetus/PycharmProjects/MASTER-THESIS/Project/Asteroids NEAs/Orbit/Ceres/_kernels/pck/gm_de431.tpc'
+                  )

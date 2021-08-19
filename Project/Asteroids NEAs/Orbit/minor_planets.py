@@ -35,7 +35,7 @@ with load.open('nea_extended.dat') as f:
     minor_planets = mpc.load_mpcorb_dataframe(f)
 
 file = open('NEA.txt', 'wt')
-sys.stdout = file
+# sys.stdout = file
 print(minor_planets.shape[0], 'minor planets loaded\n')
 
 # Filtering the orbits dataframe to avoid triggering
@@ -66,7 +66,6 @@ ra, dec, distance = earth.at(t).observe(ivar).radec()
 print('(1627) IVAR')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
 
 # (18172) 2000 QL7
 ql = sun + mpc.mpcorb_orbit(row, ts, GM_SUN)
@@ -74,7 +73,6 @@ ra, dec, distance = earth.at(t).observe(ql).radec()
 print('\n(18172) 2000 QL7')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
 
 # (66146) 1998 TU3
 tu = sun + mpc.mpcorb_orbit(row, ts, GM_SUN)
@@ -82,7 +80,6 @@ ra, dec, distance = earth.at(t).observe(tu).radec()
 print('\n(66146) 1998 TU3')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
 
 # (194126) 2001 SG276
 sg = sun + mpc.mpcorb_orbit(row, ts, GM_SUN)
@@ -90,7 +87,6 @@ ra, dec, distance = earth.at(t).observe(sg).radec()
 print('\n(194126) 2001 SG276')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
 
 # (194268) 2001 UY4
 uy = sun + mpc.mpcorb_orbit(row, ts, GM_SUN)
@@ -98,7 +94,6 @@ ra, dec, distance = earth.at(t).observe(uy).radec()
 print('\n(194268) 2001 UY4')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
 
 # (194268) 2001 UY4
 rp = sun + mpc.mpcorb_orbit(row, ts, GM_SUN)
@@ -106,6 +101,3 @@ ra, dec, distance = earth.at(t).observe(rp).radec()
 print('\n(455432) 2003 RP8 ')
 print('RA', ra)
 print('DEC', dec)
-print(distance, 'au')
-
-file.close()

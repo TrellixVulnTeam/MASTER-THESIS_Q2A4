@@ -1,0 +1,150 @@
+*******************************************************************************
+JPL/HORIZONS                  455432 (2003 RP8)            2021-Aug-15 05:14:52
+Rec #:  455432 (+COV) Soln.date: 2021-Apr-14_15:30:03    # obs: 581 (2003-2020)
+ 
+IAU76/J2000 helio. ecliptic osc. elements (au, days, deg., period=Julian yrs):
+ 
+  EPOCH=  2457827.5 ! 2017-Mar-15.00 (TDB)         Residual RMS= .30577
+   EC= .3658379275845636   QR= 1.099322226888312   TP= 2457879.2072615367
+   OM= 301.431279859702    W=  22.32996850129666   IN= 31.22594513903459
+   A= 1.733503586395737    MA= 337.6710400415187   ADIST= 2.367684945903162
+   PER= 2.28242            N= .431834111           ANGMOM= .021078686
+   DAN= 1.12186            DDN= 2.26951            L= 320.784433
+   B= 11.3596152           MOID= .105261           TP= 2017-May-05.7072615367
+ 
+Asteroid physical parameters (km, seconds, rotational period in hours):
+   GM= n.a.                RAD= n.a.               ROTPER= 4.2736
+   H= 18.2                 G= .150                 B-V= n.a.
+                           ALBEDO= n.a.            STYP= n.a.
+ 
+ASTEROID comments: 
+1: soln ref.= JPL#91, OCC=0
+2: source=ORB
+*******************************************************************************
+ 
+
+ 
+
+*******************************************************************************
+Ephemeris / WWW_USER Sun Aug 15 05:14:52 2021 Pasadena, USA      / Horizons
+*******************************************************************************
+Target body name: 455432 (2003 RP8)               {source: JPL#91}
+Center body name: Solar System Barycenter (0)     {source: DE441}
+Center-site name: BODY CENTER
+*******************************************************************************
+Start time      : A.D. 2021-Jun-10 00:00:00.0000 TDB
+Stop  time      : A.D. 2021-Jun-20 00:00:00.0000 TDB
+Step-size       : 1440 minutes
+*******************************************************************************
+Center geodetic : 0.00000000,0.00000000,0.0000000 {E-lon(deg),Lat(deg),Alt(km)}
+Center cylindric: 0.00000000,0.00000000,0.0000000 {E-lon(deg),Dxy(km),Dz(km)}
+Center radii    : (undefined)                                                  
+Small perturbers: Yes                             {source: SB441-N16}
+Output units    : AU-D
+Output type     : GEOMETRIC cartesian states
+Output format   : 3 (position, velocity, LT, range, range-rate)
+Reference frame : Ecliptic of J2000.0
+*******************************************************************************
+Initial IAU76/J2000 heliocentric ecliptic osculating elements (au, days, deg.):
+  EPOCH=  2457827.5 ! 2017-Mar-15.00 (TDB)         Residual RMS= .30577        
+   EC= .3658379275845636   QR= 1.099322226888312   TP= 2457879.2072615367      
+   OM= 301.431279859702    W=  22.32996850129666   IN= 31.22594513903459       
+  Equivalent ICRF heliocentric cartesian coordinates (au, au/d):
+   X= 1.780359822430171E-01  Y=-9.572604266141533E-01  Z=-7.153165276766031E-01
+  VX= 1.486799459863158E-02 VY= 2.155604069657207E-04 VZ= 9.901436962221200E-03
+Asteroid physical parameters (km, seconds, rotational period in hours):        
+   GM= n.a.                RAD= n.a.               ROTPER= 4.2736              
+   H= 18.2                 G= .150                 B-V= n.a.                   
+                           ALBEDO= n.a.            STYP= n.a.                  
+*******************************************************************************
+JDTDB
+   X     Y     Z
+   VX    VY    VZ
+   LT    RG    RR
+*******************************************************************************
+$$SOE
+2459375.500000000 = A.D. 2021-Jun-10 00:00:00.0000 TDB 
+ X =-1.366252302860174E+00 Y =-6.961593362438063E-01 Z =-9.244568567449476E-01
+ VX= 9.119516602218457E-03 VY=-8.562982224920404E-03 VZ= 2.017617082190526E-03
+ LT= 1.034108719471231E-02 RG= 1.790503743780753E+00 RR=-4.671065621477603E-03
+2459376.500000000 = A.D. 2021-Jun-11 00:00:00.0000 TDB 
+ X =-1.357097526395703E+00 Y =-7.047040111111852E-01 Z =-9.224152092649917E-01
+ VX= 9.190048362413675E-03 VY=-8.526245703081779E-03 VZ= 2.065722601998391E-03
+ LT= 1.031406555314782E-02 RG= 1.785825091577814E+00 RR=-4.686218341920055E-03
+2459377.500000000 = A.D. 2021-Jun-12 00:00:00.0000 TDB 
+ X =-1.347872182678872E+00 Y =-7.132115825478252E-01 Z =-9.203253219400799E-01
+ VX= 9.260650487728003E-03 VY=-8.488773870880977E-03 VZ= 2.114096923433797E-03
+ LT= 1.028695675382033E-02 RG= 1.781131348476016E+00 RR=-4.701246922870017E-03
+2459378.500000000 = A.D. 2021-Jun-13 00:00:00.0000 TDB 
+ X =-1.338576203223894E+00 Y =-7.216813107459927E-01 Z =-9.181869255195910E-01
+ VX= 9.331319197678883E-03 VY=-8.450557713858182E-03 VZ= 2.162740939430010E-03
+ LT= 1.025976152236278E-02 RG= 1.776422640114809E+00 RR=-4.716148353387645E-03
+2459379.500000000 = A.D. 2021-Jun-14 00:00:00.0000 TDB 
+ X =-1.329209523391527E+00 Y =-7.301124468241974E-01 Z =-9.159997498754090E-01
+ VX= 9.402050579040262E-03 VY=-8.411588098816104E-03 VZ= 2.211655511764813E-03
+ LT= 1.023248060199025E-02 RG= 1.771699095177891E+00 RR=-4.730919555677012E-03
+2459380.500000000 = A.D. 2021-Jun-15 00:00:00.0000 TDB 
+ X =-1.319772082523689E+00 Y =-7.385042327080257E-01 Z =-9.137635240339125E-01
+ VX= 9.472840582094903E-03 VY=-8.371855772962697E-03 VZ= 2.260841469392694E-03
+ LT= 1.020511475389012E-02 RG= 1.766960845460775E+00 RR=-4.745557383678116E-03
+2459381.500000000 = A.D. 2021-Jun-16 00:00:00.0000 TDB 
+ X =-1.310263824081854E+00 Y =-7.468559010101302E-01 Z =-9.114779762096542E-01
+ VX= 9.543685016791301E-03 VY=-8.331351363091351E-03 VZ= 2.310299606715667E-03
+ LT= 1.017766475762048E-02 RG= 1.762208025939760E+00 RR=-4.760058621634037E-03
+2459382.500000000 = A.D. 2021-Jun-17 00:00:00.0000 TDB 
+ X =-1.300684695789354E+00 Y =-7.551666749094235E-01 Z =-9.091428338408065E-01
+ VX= 9.614579548801617E-03 VY=-8.290065374800523E-03 VZ= 2.360030681789414E-03
+ LT= 1.015013141151685E-02 RG= 1.757440774842354E+00 RR=-4.774419982631659E-03
+2459383.500000000 = A.D. 2021-Jun-18 00:00:00.0000 TDB 
+ X =-1.291034649777667E+00 Y =-7.634357680295097E-01 Z =-9.067578236264293E-01
+ VX= 9.685519695481053E-03 VY=-8.247988191757092E-03 VZ= 2.410035414465615E-03
+ LT= 1.012251553310742E-02 RG= 1.752659233719176E+00 RR=-4.788638107118716E-03
+2459384.500000000 = A.D. 2021-Jun-19 00:00:00.0000 TDB 
+ X =-1.281313642736796E+00 Y =-7.716623843164048E-01 Z =-9.043226715656326E-01
+ VX= 9.756500821725042E-03 VY=-8.205110075006024E-03 VZ= 2.460314484466306E-03
+ LT= 1.009481795953692E-02 RG= 1.747863547517345E+00 RR=-4.802709561395118E-03
+2459385.500000000 = A.D. 2021-Jun-20 00:00:00.0000 TDB 
+ X =-1.271521636069843E+00 Y =-7.798457179155895E-01 Z =-9.018371029986981E-01
+ VX= 9.827518135723112E-03 VY=-8.161421162330316E-03 VZ= 2.510868529389092E-03
+ LT= 1.006703954799931E-02 RG= 1.743053864655391E+00 RR=-4.816630836079438E-03
+$$EOE
+*******************************************************************************
+Coordinate system description:
+
+  Ecliptic at the standard reference epoch
+
+    Reference epoch: J2000.0
+    X-Y plane: adopted Earth orbital plane at the reference epoch
+               Note: obliquity of 84381.448 arcseconds (IAU76) wrt ICRF equator
+    X-axis   : ICRF
+    Z-axis   : perpendicular to the X-Y plane in the directional (+ or -) sense
+               of Earth's north pole at the reference epoch.
+
+  Symbol meaning [1 au= 149597870.700 km, 1 day= 86400.0 s]:
+
+    JDTDB    Julian Day Number, Barycentric Dynamical Time
+      X      X-component of position vector (au)
+      Y      Y-component of position vector (au)
+      Z      Z-component of position vector (au)
+      VX     X-component of velocity vector (au/day)                           
+      VY     Y-component of velocity vector (au/day)                           
+      VZ     Z-component of velocity vector (au/day)                           
+      LT     One-way down-leg Newtonian light-time (day)
+      RG     Range; distance from coordinate center (au)
+      RR     Range-rate; radial velocity wrt coord. center (au/day)
+
+Geometric states/elements have no aberrations applied.
+
+
+ Computations by ...
+     Solar System Dynamics Group, Horizons On-Line Ephemeris System
+     4800 Oak Grove Drive, Jet Propulsion Laboratory
+     Pasadena, CA  91109   USA
+     Information  : https://ssd.jpl.nasa.gov/
+     Documentation: https://ssd.jpl.nasa.gov/?horizons_doc
+     Connect      : https://ssd.jpl.nasa.gov/?horizons (browser)
+                    telnet ssd.jpl.nasa.gov 6775       (command-line)
+                    e-mail command interface available
+                    Script and CGI interfaces available
+     Author       : Jon.D.Giorgini@jpl.nasa.gov
+*******************************************************************************

@@ -38,28 +38,29 @@ sun relative to the earth at the time of the observation.
 
 ###############################################################################
 ###############################################################################
-
-# k is the Gaussian gravitational constant, expressed in radians per day
-# NOTE - this program was written July 2012. At the time, the standard
-# value for the Gaussian gravitational constant was the one defined by
-# Carl Gauss in 1809. However, this may no longer be the acceptable value
-# for k. If not, the value below for k can be replaced.
-k = 0.01720209895
+"""
+k is the Gaussian gravitational constant, expressed in radians per day
+NOTE - this program was written July 2012. At the time, the standard
+value for the Gaussian gravitational constant was the one defined by
+Carl Gauss in 1809. However, this may no longer be the acceptable value
+for k. If not, the value below for k can be replaced.
+"""
+k = 0.01720209895  # rad/day
 
 # c is the speed of light, expressed in AU per day (JD)
-c = 173.1446
+c = 173.1446  # AU/day (7.21436 AU/h * 24 h)
 
 
 ###############################################################################
 
 # Convert degrees to radians
 def degs2rads(degs):
-    return (degs / 360) * 2 * pi
+    return (degs / 360) * 2 * np.pi
 
 
 # Convert hours to radians
 def hrs2rads(hrs):
-    return (hrs * pi) / 12
+    return (hrs * np.pi) / 12
 
 
 # Take the dot product of two vectors
@@ -99,15 +100,12 @@ def get_vector(mag, unitVector):
 
 # Calculate the distances from the asteroid for each observation
 def get_distances(a1, a3, p1_hat, p2_hat, p3_hat, R1, R2, R3):
-    p1d = (a1 * dot(cross(R1, p2_hat), p3_hat) - dot(cross(R2, p2_hat), p3_hat) + a3 * dot(cross(R3, p2_hat),
-                                                                                           p3_hat)) / (
-                  a1 * dot(cross(p1_hat, p2_hat), p3_hat))
-    p2d = (a1 * dot(cross(p1_hat, R1), p3_hat) - dot(cross(p1_hat, R2), p3_hat) + a3 * dot(cross(p1_hat, R3),
-                                                                                           p3_hat)) / (
-                  -1 * dot(cross(p1_hat, p2_hat), p3_hat))
-    p3d = (a1 * dot(cross(p2_hat, R1), p1_hat) - dot(cross(p2_hat, R2), p1_hat) + a3 * dot(cross(p2_hat, R3),
-                                                                                           p1_hat)) / (
-                  a3 * dot(cross(p2_hat, p3_hat), p1_hat))
+    p1d = (a1 * dot(cross(R1, p2_hat), p3_hat) - dot(cross(R2, p2_hat), p3_hat) +
+           a3 * dot(cross(R3, p2_hat), p3_hat)) / (a1 * dot(cross(p1_hat, p2_hat), p3_hat))
+    p2d = (a1 * dot(cross(p1_hat, R1), p3_hat) - dot(cross(p1_hat, R2), p3_hat) +
+           a3 * dot(cross(p1_hat, R3), p3_hat)) / (-1 * dot(cross(p1_hat, p2_hat), p3_hat))
+    p3d = (a1 * dot(cross(p2_hat, R1), p1_hat) - dot(cross(p2_hat, R2), p1_hat) +
+           a3 * dot(cross(p2_hat, R3), p1_hat)) / (a3 * dot(cross(p2_hat, p3_hat), p1_hat))
     return p1d, p2d, p3d
 
 
@@ -125,11 +123,9 @@ def get_pos_vectors(p1d, p2d, p3d, p1_hat, p2_hat, p3_hat, R1, R2, R3):
 
 
 def f(rd, r2, rdot, tau):
-    return 1 - (tau ** 2) / (2 * rd ** 3) + ((tau ** 3) * dot(r2, rdot)) / (2 * (rd ** 5)) + ((tau ** 4) / 24) * (
-            (3 / (rd ** 3)) * ((dot(rdot, rdot) / (rd ** 2)) - 1 / (rd ** 3)) - (15 / (rd ** 2)) * dot(rdot,
-                                                                                                       rdot) ** 2 + 1 / (
-                    rd ** 6))
-    return f
+    return 1 - (tau ** 2) / (2 * rd ** 3) + ((tau ** 3) * dot(r2, rdot)) / (2 * (rd ** 5)) + ((tau ** 4) / 24) * \
+           ((3 / (rd ** 3)) * ((dot(rdot, rdot) / (rd ** 2)) - 1 / (rd ** 3)) - (15 / (rd ** 2)) * dot(rdot, rdot) ** 2 + 1 / (rd ** 6))
+#    return f
 
 
 def g(rd, rdot, tau):
@@ -193,13 +189,13 @@ def julian_date(month, day, year, time):
 
 def get_angle_amb(angle1, angle2):
     if angle1 < 0:
-        angle1m = [pi - angle1, 2 * pi + angle1]
+        angle1m = [np.pi - angle1, 2 * np.pi + angle1]
     else:
-        angle1m = [angle1, pi - angle1]
+        angle1m = [angle1, np.pi - angle1]
     if angle2 < 0:
-        angle2m = [-angle2, 2 * pi + angle2]
+        angle2m = [-angle2, 2 * np.pi + angle2]
     else:
-        angle2m = [angle2, 2 * pi - angle2]
+        angle2m = [angle2, 2 * np.pi - angle2]
     for angle in angle2m:
         if abs(angle - angle1m[0]) < 1 * 10 ** -12:
             return angle
@@ -262,7 +258,8 @@ def calculate_vectors(RA1, Dec1, t1, RA2, Dec2, t2, RA3, Dec3, t3, R1, R2, R3, R
     rdot_prev = [0, 0, 0]
     n = 1
     # Iterate until the values for rdot converge
-    while mag([rdot_new[0] - rdot_prev[0], rdot_new[1] - rdot_prev[1], rdot_new[2] - rdot_prev[2]]) > 10 ** -11:
+    # while mag([rdot_new[0] - rdot_prev[0], rdot_new[1] - rdot_prev[1], rdot_new[2] - rdot_prev[2]]) > 10 ** -11:
+    while mag(vector(rdot_new[0] - rdot_prev[0], rdot_new[1] - rdot_prev[1], rdot_new[2] - rdot_prev[2])) > 10 ** -11:
         # Recalculate a1 and a3
         a1, a3 = reapprox_a(r2, rdot_new, tau1, tau3)
 
@@ -325,7 +322,7 @@ def determine_orbital_elements(r, rdot):
     o1 = asin(l[0] / (mag(l) * sin(irads)))
     o2 = acos(-l[1] / (mag(l) * sin(irads)))
     orads = get_angle_amb(o1, o2)
-    o = orads * 180 / pi
+    o = orads * 180 / np.pi
     print("The longitude of the ascending node of the asteroid orbit equals", o)
 
     # Argument of the Perihilion (w)
@@ -338,13 +335,13 @@ def determine_orbital_elements(r, rdot):
     v = get_angle_amb(v1, v2)
 
     wrads = U - v
-    w = wrads * 180 / pi % 360
+    w = wrads * 180 / np.pi % 360
     print("The argument of the perihilion equals", w)
 
     # Mean Anomaly (M)
     E = acos((1 - mag(r) / a) / e)
     Mrads = E - e * sin(E)
-    M = Mrads * 180 / pi
+    M = Mrads * 180 / np.pi
     print("The mean anomaly equals", M)
 
 

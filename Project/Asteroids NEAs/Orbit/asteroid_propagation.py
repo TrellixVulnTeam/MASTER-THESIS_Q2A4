@@ -1,3 +1,4 @@
+import matplotlib
 from astropy.utils.data import conf
 from astropy import units as u
 from astropy.time import Time, TimeDelta
@@ -13,6 +14,7 @@ from poliastro.twobody import Orbit
 from poliastro.util import norm, time_range
 from glyphsLib import GSFont
 
+matplotlib.rcParams['font.sans-serif'] = ['Source Han Sans TW', 'sans-serif']
 
 print(conf.dataurl)
 print(conf.remote_timeout)

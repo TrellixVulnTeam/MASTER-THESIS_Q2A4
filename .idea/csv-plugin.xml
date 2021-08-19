@@ -38,10 +38,24 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project/Asteroids NEAs/OrbitDetermination-master/IVAR.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project/Asteroids NEAs/OrbitDetermination-master/data.csv">
           <value>
             <Attribute>
               <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="/Project/Asteroids NEAs/orbitdeterminator-master/orbitdeterminator/example_data/orbit.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="&#9;" />
             </Attribute>
           </value>
         </entry>
