@@ -46,7 +46,7 @@ Parameter | Gibbs Value | Lambert Value | MPC
  Argument of perigee (deg)  | 100.629 | 100.613 | 100.76305 
  True anomaly (deg)         | 171.975 | 171.991 | 
  Semimajor axis (AU)        | 2.42315 | 2.42232 | 2.4243300 
- Period (years)             | 3.75388 | 3.75196 | 0.7
+ Period (years)             | 3.75388 | 3.75196 | 3.77
 
 
 ## Period
