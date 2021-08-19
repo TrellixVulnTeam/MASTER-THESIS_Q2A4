@@ -43,12 +43,12 @@ Where the period between each observation is 24 hours (86400.0s)
 
 Parameter | Gibbs Value | Lambert Value | MPC | JPL
 | :--- | ---:| :--- | ---:| ---:
- Eccentricity              | 0.788484 | 0.78763 | 0.7874989 | 0.7875247590730706
- Inclination (deg)         | 5.42927 | 5.42927 | 5.43727 | 5.431398047041429
- Ascending node (deg)      | 160.848 | 160.848 | 160.75715 | 160.9394416839746
- Argument of perigee (deg) | 107.849 | 107. 891 | 107.74904 | 107.5466553945647
+ Eccentricity              | 0.788484 | 0.78763 | 0.7874989 | 0.78752475
+ Inclination (deg)         | 5.42927 | 5.42927 | 5.43727 | 5.431398
+ Ascending node (deg)      | 160.848 | 160.848 | 160.75715 | 160.93944
+ Argument of perigee (deg) | 107.849 | 107. 891 | 107.74904 | 107.5466
  True anomaly (deg)        | 172.072 | 172.03 | | 172.05
- Semimajor axis (AU)       | 1.45392 | 1.4548 | 1.4530000 | 1.453428593715595 
+ Semimajor axis (AU)       | 1.45392 | 1.4548 | 1.4530000 | 1.453428 
  Period (years)            | 1.7447 | 1.74646 | 1.75 | 1.75226
 
 
