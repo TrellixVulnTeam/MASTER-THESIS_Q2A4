@@ -23,21 +23,28 @@ Orbit type: **Amor**
 The state vectors (from JPL) used for both the Gibbs and Lambert's problem are:
 
 2459436.500000000 = A.D. 2021-Aug-10 00:00:00.0000 TDB 
+
  X = 1.094313940666847E+00 Y = 1.453361244265937E+00 Z =-2.665681549832875E-01
  
 2459437.500000000 = A.D. 2021-Aug-11 00:00:00.0000 TDB 
+
  X = 1.088021004406742E+00 Y = 1.464428569258595E+00 Z =-2.670108183228992E-01
  
 2459438.500000000 = A.D. 2021-Aug-12 00:00:00.0000 TDB 
+
  X = 1.081676432465787E+00 Y = 1.475427096848251E+00 Z =-2.674408931462609E-01
 
 Where the period between each observation is 24 hours (86400.0s)
+
     JDTDB    Julian Day Number, Barycentric Dynamical Time
+    
       X      X-component of position vector (au)
+      
       Y      Y-component of position vector (au)
+      
       Z      Z-component of position vector (au)
 
-**Parameter** | **Gibbs Value** | **Lambert Value** | **MPC** 
+Parameter | Gibbs Value | Lambert Value | MPC 
 | :--- | ---:| :--- | ---:| ---:
  Eccentricity | 0.400731 | 0.400747 | 0.3968367
  Inclination (deg) | 8.45956 | 8.45956 | 8.45203 
