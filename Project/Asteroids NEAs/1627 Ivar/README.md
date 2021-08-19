@@ -33,6 +33,7 @@ The state vectors (from JPL) used for both the Gibbs and Lambert's problem are:
 2459438.500000000 = A.D. 2021-Aug-12 00:00:00.0000 TDB 
 
  X = 1.081676432465787E+00 Y = 1.475427096848251E+00 Z =-2.674408931462609E-01
+ 
 
 Where the period between each observation is 24 hours (86400.0s)
 
@@ -45,7 +46,7 @@ Where the period between each observation is 24 hours (86400.0s)
       Z      Z-component of position vector (au)
 
 Parameter | Gibbs Value | Lambert Value | MPC 
-| :--- | ---:| :--- | ---:| ---:
+| :--- | ---:| :--- | ---:
  Eccentricity | 0.400731 | 0.400747 | 0.3968367
  Inclination (deg) | 8.45956 | 8.45956 | 8.45203 
  RA of ascending node (deg) | 133.143 | 133.142 | 133.11979 
