@@ -16,6 +16,38 @@ Orbit type: **Amor**
 
 1+ KM Near-Earth Object
 
+The state vectors (from JPL) used for both the Gibbs and Lambert's problem are:
+
+- 2459436.500000000 = A.D. 2021-Aug-10 00:00:00.0000 TDB 
+ X =-1.122518886726144E+00 Y =-3.261169859270553E+00 Z =-1.108747744758537E+00
+ 
+- 2459437.500000000 = A.D. 2021-Aug-11 00:00:00.0000 TDB 
+ X =-1.116806655155184E+00 Y =-3.264087400211805E+00 Z =-1.108943180201054E+00
+ 
+- 2459438.500000000 = A.D. 2021-Aug-12 00:00:00.0000 TDB 
+ X =-1.111087527005574E+00 Y =-3.266984642050584E+00 Z =-1.109131725920097E+00
+ 
+
+Where the period between each observation is 24 hours (86400.0s)
+
+    JDTDB    Julian Day Number, Barycentric Dynamical Time
+    
+      X      X-component of position vector (au)
+      
+      Y      Y-component of position vector (au)
+      
+      Z      Z-component of position vector (au)
+
+Parameter | Gibbs Value | Lambert Value | MPC 
+| :--- | ---:| :--- | ---:
+ Eccentricity               | 0.510745 | 0.51123 | 0.5110881
+ Inclination (deg)          | 17.8388 | 17.8388 | 17.83365 
+ RAAN (deg)                 | 338.377 | 338.377 | 338.46207 
+ Argument of perigee (deg)  | 100.629 | 100.613 | 100.76305 
+ True anomaly (deg)         | 171.975 | 171.991 | 
+ Semimajor axis (AU)        | 2.42315 | 2.42232 | 2.4243300 
+ Period (years)             | 3.75388 | 3.75196 | 0.7
+
 
 ## Period
 ALCDEF 		**2.37512 Hours**
