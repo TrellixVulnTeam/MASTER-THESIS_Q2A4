@@ -65,8 +65,15 @@ plt.plot(time, rmse, '-k')
 
 # annot_max(time, rmse)
 
+plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
-plt.ylabel('RMSE')
+plt.ylabel('RMSE (x0.01 Mag)')
+plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
+plt.savefig('Periodogram: 1998 TU3.svg', dpi=1000)
+
+# zoom
+plt.xlabel('Hours')
+plt.ylabel('RMSE (x0.01 Mag)')
 plt.xlim(2, 4)
 plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
 plt.savefig('Periodogram: 1998 TU3 zoom.svg', dpi=1000)

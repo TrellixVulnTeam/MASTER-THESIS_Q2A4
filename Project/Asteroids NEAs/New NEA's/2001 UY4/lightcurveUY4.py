@@ -41,7 +41,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
-plt.ylabel('RMSE')
+plt.ylabel('RMSE (x0.01 Mag)')
 plt.xlim(4, 8)
 plt.title('Periodogram: 2000 QL7', fontweight="bold", fontsize=16)
 plt.savefig('Periodogram: 2001UY4 zoom.svg', dpi=1000)

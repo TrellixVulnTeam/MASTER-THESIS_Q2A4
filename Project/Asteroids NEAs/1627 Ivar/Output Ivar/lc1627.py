@@ -76,13 +76,13 @@ fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
-plt.ylabel('RMSE')
+plt.ylabel('RMSE (x0.01 Mag)')
 plt.title('Periodogram: Ivar 1627', fontweight="bold", fontsize=16)
 plt.savefig('Periodogram: Ivar1627.svg', dpi=1000)
 
 # zoom plot
 plt.xlabel('Hours')
-plt.ylabel('RMSE')
+plt.ylabel('RMSE (x0.01 Mag)')
 plt.xlim(2, 6)
 plt.title('Periodogram: Ivar 1627', fontweight="bold", fontsize=16)
 plt.savefig('Periodogram: Ivar 1627 zoom.svg', dpi=1000)
