@@ -26,5 +26,6 @@ frame = OrbitPlotter3D()
 
 frame.plot(eros, label="eros")
 frame.plot_trajectory(earth.sample(), label=Earth)
+plt.show()
 
 
