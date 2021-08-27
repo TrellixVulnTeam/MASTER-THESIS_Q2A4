@@ -6,7 +6,7 @@ from skyfield.data import mpc
 from skyfield.constants import GM_SUN_Pitjeva_2005_km3_s2 as GM_SUN
 
 ts = load.timescale()
-t = ts.utc(2018, 5, 6, 22, 59, 13)
+t = ts.utc(2019, 8, 13, 7, 00, 00)
 
 with load.open('nea_extended.dat') as f:
     minor_planets = mpc.load_mpcorb_dataframe(f)
@@ -14,7 +14,12 @@ with load.open('nea_extended.dat') as f:
 file = open('NEA.txt', 'wt')
 print(minor_planets.shape[0], 'minor planets loaded\n')
 minor_planets = minor_planets.set_index('designation', drop=False)
-row = minor_planets.loc['(1627) Ivar']
+# row = minor_planets.loc['(1627) Ivar']
+# row = minor_planets.loc['(18172) 2000 QL7']
+# row = minor_planets.loc['(66146) 1998 TU3']
+# row = minor_planets.loc['(194126) 2001 SG276']
+# row = minor_planets.loc['(194268) 2001 UY4']
+row = minor_planets.loc['(455432) 2003 RP8']
 
 # planet
 planets = load('de421.bsp')
