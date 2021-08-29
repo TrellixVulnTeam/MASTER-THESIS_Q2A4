@@ -13,6 +13,9 @@ print(df2)
 amp = df['Curve']
 maxValue = max(amp)
 minValue = min(amp)
+av = [maxValue, minValue]
+av2 = sum(av)/len(av)
+print('Mean mag is ', av2)
 
 
 def sub(num1, num2):
@@ -51,7 +54,7 @@ fig, ax = plt.subplots(figsize=(10, 6))
 plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
 plt.ylabel('RMSE (x0.01 Mag)')
-# plt.xlim(4, 6)
-plt.title('Periodogram: 2000 QL7', fontweight="bold", fontsize=16)
-plt.savefig('Periodogram: 2003RP8.svg', dpi=1000)
+plt.xlim(4, 6)
+plt.title('Periodogram: 2003 RP8', fontweight="bold", fontsize=16)
+plt.savefig('Periodogram: 2003RP8 zoom.svg', dpi=1000)
 plt.show()

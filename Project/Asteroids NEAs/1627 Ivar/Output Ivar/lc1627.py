@@ -42,6 +42,9 @@ print(df2)
 amp = df['Curve']
 maxValue = max(amp)
 minValue = min(amp)
+av = [maxValue, minValue]
+av2 = sum(av)/len(av)
+print('Mean mag is ', av2)
 
 
 def sub(num1, num2):
@@ -51,6 +54,7 @@ def sub(num1, num2):
 print(maxValue)
 print(minValue)
 print('Amplitude is ', sub(maxValue, minValue))
+
 
 time = df3['Period(hours)']  # convert to hours
 rmse = df3['RMSE']

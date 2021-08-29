@@ -15,6 +15,9 @@ print(df2)
 amp = df['Curve']
 maxValue = max(amp)
 minValue = min(amp)
+av = [maxValue, minValue]
+av2 = sum(av)/len(av)
+print('Mean mag is ', av2)
 
 
 def sub(num1, num2):
