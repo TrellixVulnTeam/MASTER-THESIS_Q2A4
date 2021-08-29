@@ -14,6 +14,18 @@ print(df)
 df2 = df.sort_values(by="Phase")
 print(df2)
 
+amp = df['Curve']
+maxValue = max(amp)
+minValue = min(amp)
+
+
+def sub(num1, num2):
+    return num1 - num2
+
+
+print(maxValue)
+print(minValue)
+print('Amplitude is ', sub(maxValue, minValue))
 x = df2['Phase']
 y = df2['Curve']
 X_Y_Spline = make_interp_spline(x, y)

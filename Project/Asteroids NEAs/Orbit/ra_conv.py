@@ -1,5 +1,6 @@
 from astropy.coordinates import SkyCoord
 from astropy import units as u
+from astropy.wcs.docstrings import alt
 from skyfield.positionlib import Barycentric
 from skyfield.api import load
 from skyfield.data import mpc
@@ -69,3 +70,8 @@ d = apparent.distance()
 print('Ivar x,y,z:', barycentric.position.au, 'au')
 print('Ivar relative velocity:', astrometric.velocity.km_per_s, 'km/s')
 print('Time of observation:', apparent.t.utc_strftime())
+
+# xyz = astrometric.position.to(u.au)
+# altitude = alt.to(u.deg)
+# print(xyz)
+# print('{0:0.03f}'.format(altitude))

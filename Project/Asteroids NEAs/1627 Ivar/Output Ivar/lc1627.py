@@ -1,6 +1,7 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import pandas as pd
+from matplotlib.legend import Legend
 from scipy.interpolate import make_interp_spline
 
 plt.style.use('seaborn-whitegrid')
@@ -38,6 +39,19 @@ print(df)
 df2 = df.sort_values(by="Phase")
 print(df2)
 
+amp = df['Curve']
+maxValue = max(amp)
+minValue = min(amp)
+
+
+def sub(num1, num2):
+    return num1 - num2
+
+
+print(maxValue)
+print(minValue)
+print('Amplitude is ', sub(maxValue, minValue))
+
 time = df3['Period(hours)']  # convert to hours
 rmse = df3['RMSE']
 
@@ -47,7 +61,7 @@ ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
 df2.plot(x="Phase", y="Curve", ax=ax, color="C3", lw=2, label="Fit (4th order)", zorder=2)
 
 plt.gca().invert_yaxis()
-plt.xlabel('Phase [Period = 4.7950 H]')
+plt.xlabel('Phase [Period = 4.79640 H]')
 plt.ylabel('Mag')
 plt.title('IVAR Light Curve', fontweight='bold')
 plt.legend(loc='best')
@@ -66,10 +80,11 @@ ax = df5.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
 df5a.plot(x="Phase", y="Curve", ax=ax, color="C3", lw=2, label="Fit (4th order)", zorder=2)
 
 plt.gca().invert_yaxis()
-plt.xlabel('Phase [Period = 4.7950 H]')
+plt.xlabel('Phase [Period = 4.7965 H]')
 plt.ylabel('Mag')
 plt.title('IVAR Light Curve (alcdef)', fontweight='bold')
 plt.legend(loc='best')
+
 plt.savefig('LightCurve_Ivar1627_(alcdef).svg', dpi=1000)
 # periodogram
 fig, ax = plt.subplots(figsize=(10, 6))

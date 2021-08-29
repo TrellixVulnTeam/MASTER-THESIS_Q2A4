@@ -17,6 +17,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project/Asteroids NEAs/1627 Ivar/Output Ivar/new.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project/Asteroids NEAs/1627 Ivar/Output Ivar/period.csv">
           <value>
             <Attribute>
