@@ -9,10 +9,12 @@ plt.style.use('seaborn-whitegrid')
 
 # phase data import
 df = pd.read_csv('Light curve.csv')
-print(df)
+# print(df)
+# df['Mag'].plot()
+# df['Mag'].rolling(window=20).mean().plot()
 
 df2 = df.sort_values(by="Phase")
-print(df2)
+# print(df2)
 
 amp = df['Curve']
 maxValue = max(amp)
@@ -91,6 +93,6 @@ plt.xlabel('Hours')
 plt.ylabel('RMSE (x0.01 Mag)')
 plt.xlim(2, 4)
 plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
-plt.savefig('Periodogram: 1998 TU3 zoom.svg', dpi=1000)
+# plt.savefig('Periodogram: 1998 TU3 zoom.svg', dpi=1000)
 
 plt.show()
