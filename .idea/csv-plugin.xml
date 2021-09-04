@@ -45,6 +45,13 @@
             </Attribute>
           </value>
         </entry>
+        <entry key="/Project/Asteroids NEAs/New NEAs/2001 SG276/periodogram.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
         <entry key="/Project/Asteroids NEAs/OrbitDetermination-master/IVAR.csv">
           <value>
             <Attribute>
