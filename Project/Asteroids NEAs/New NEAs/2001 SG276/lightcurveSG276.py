@@ -5,12 +5,15 @@ import numpy as np
 import matplotlib
 
 
-plt.style.use('seaborn-whitegrid')
+if "setup_text_plots" not in globals():
+    from astroML.plotting import setup_text_plots
+setup_text_plots(fontsize=15, usetex=True)
+
 df = pd.read_csv('Light curve.csv')
 df3 = pd.read_csv('periodogram.csv')
-print(df)
+# print(df)
 df2 = df.sort_values(by="Phase")
-print(df2)
+# print(df2)
 
 amp = df['Curve']
 maxValue = max(amp)
@@ -43,22 +46,31 @@ ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
 plt.plot(X_, Y_, color="C3", lw=3, label="Fit (6th order)", zorder=2)
 
 plt.gca().invert_yaxis()
-plt.xlabel("Phase [Period = 5.0906 H")
-plt.ylabel("Mag")
-plt.title('2001 SG276 Light Curve', fontweight="bold")
+plt.xlabel("Phase [Period = 5.0906 H]")
+plt.ylabel("$H_{g}$ [Mag]")
+plt.title('2001 SG276 Light Curve', fontweight="bold", fontsize=21)
 plt.legend(loc='best')
+plt.xlim(-0.1, 1.1)
+plt.ylim(18.38, 17.76)
 # plt.grid(b=True, which='major', color='#666666', linestyle='-')
-# plt.minorticks_on()
+plt.minorticks_on()
+plt.grid(b=True, which='major', color='gray', linestyle='-', linewidth=0.4)
 # plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
-plt.savefig('New_light_curve_2001SG276.svg', dpi=1000)
+plt.savefig('New_light_curve_2001SG276 new.svg', dpi=1000)
 # plt.savefig('Final_light_curve 2000QL7.eps', format='eps', dpi=1000)
+
 # Periodogram
 fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k')
 plt.xlabel('Hours')
 plt.ylabel('RMSE (x0.01 Mag)')
-plt.xlim(4, 6)
-plt.title('Periodogram: 2001 SG276', fontweight="bold", fontsize=16)
-plt.savefig('Periodogram: 2001 SG276 zoom.svg', dpi=1000)
+# plt.xlim(4, 6)
+plt.ylim(3.7, 7.4)
+plt.xlim(0, 13)
+plt.minorticks_on()
+plt.grid(b=True, which='major', color='gray', linestyle='-', linewidth=0.4)
+plt.grid(b=True, which='minor', color='gray', linestyle='--', linewidth=0.2)
+plt.title('Periodogram Log: 2001 SG276', fontweight="bold", fontsize=21)
+plt.savefig('Periodogram: 2001 SG276 new.svg', dpi=1000)
 plt.show()

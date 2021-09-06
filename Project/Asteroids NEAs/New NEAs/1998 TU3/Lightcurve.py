@@ -4,8 +4,12 @@ import pandas as pd
 from scipy.interpolate import make_interp_spline
 import matplotlib
 
+
+if "setup_text_plots" not in globals():
+    from astroML.plotting import setup_text_plots
+setup_text_plots(fontsize=15, usetex=True)
+
 matplotlib.rcParams.update({'errorbar.capsize': 2})
-plt.style.use('seaborn-whitegrid')
 
 # phase data import
 df = pd.read_csv('Light curve.csv')
@@ -47,14 +51,18 @@ plt.plot(X_, Y_, color="C3", lw=3, label="Fit (4th order)", zorder=2)
 # capthick=1, ecolor="gray", linewidth=1, label='5 nights of Magnitude')
 # ax.scatter(x=df['Phase'], y=df['Curve'], s=10, c='r', label='6th order curve')
 plt.xlabel("Phase [Period = 2.3777 H]")
-plt.ylabel("Mag")
+plt.ylabel("$H_{g}$ [Mag]")
 plt.gca().invert_yaxis()
-plt.title('1998 TU3 Light Curve', fontweight="bold", fontsize=16)
+plt.xlim(-0.1, 1.1)
+plt.ylim(14.49, 14.31)
+plt.minorticks_on()
+plt.grid(b=True, which='major', color='gray', linestyle='-', linewidth=0.4)
+plt.title('1998 TU3 Light Curve', fontweight="bold", fontsize=21)
 plt.legend(loc='best')
 # plt.grid(b=True, which='major', color='#666666', linestyle='-')
 # plt.minorticks_on()
 # plt.grid(b=True, which='minor', color='#999999', linestyle='-', alpha=0.2)
-plt.savefig('Final_light_curve_1998TU3.svg', dpi=1000)
+plt.savefig('Final_light_curve_1998TU3 new.svg', dpi=1000)
 
 # period data import
 df3 = pd.read_csv('periodogram log.csv')
@@ -82,17 +90,21 @@ plt.plot(time, rmse, '-k')
 
 # annot_max(time, rmse)
 
-plt.plot(time, rmse, '-k')
-plt.xlabel('Hours')
-plt.ylabel('RMSE (x0.01 Mag)')
-plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
-plt.savefig('Periodogram: 1998 TU3.svg', dpi=1000)
+# plt.plot(time, rmse, '-k')
+# plt.xlabel('Hours')
+# plt.ylabel('RMSE (x0.01 Mag)')
+# plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=21)
+# # plt.savefig('Periodogram: 1998 TU3.svg', dpi=1000)
 
 # zoom
 plt.xlabel('Hours')
 plt.ylabel('RMSE (x0.01 Mag)')
-plt.xlim(2, 4)
-plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=16)
-# plt.savefig('Periodogram: 1998 TU3 zoom.svg', dpi=1000)
+plt.xlim(2.1, 3.9)
+plt.ylim(1.49, 3.0)
+plt.minorticks_on()
+plt.grid(b=True, which='major', color='gray', linestyle='-', linewidth=0.4)
+plt.grid(b=True, which='minor', color='gray', linestyle='--', linewidth=0.2)
+plt.title('Periodogram: 1998 TU3', fontweight="bold", fontsize=21)
+plt.savefig('Periodogram: 1998 TU3 new zoom.svg', dpi=1000)
 
 plt.show()
