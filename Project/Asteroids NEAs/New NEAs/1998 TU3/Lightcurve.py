@@ -4,7 +4,6 @@ import pandas as pd
 from scipy.interpolate import make_interp_spline
 import matplotlib
 
-
 if "setup_text_plots" not in globals():
     from astroML.plotting import setup_text_plots
 setup_text_plots(fontsize=15, usetex=True)
@@ -24,7 +23,7 @@ amp = df['Curve']
 maxValue = max(amp)
 minValue = min(amp)
 av = [maxValue, minValue]
-av2 = sum(av)/len(av)
+av2 = sum(av) / len(av)
 print('Mean mag is ', av2)
 
 
@@ -41,11 +40,14 @@ X_Y_Spline = make_interp_spline(x, y)
 X_ = np.linspace(x.min(), x.max(), 500)
 Y_ = X_Y_Spline(X_)
 
-ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
-              marker="o", label="Data of 5 nights", capthick=1, ecolor="dimgray",
-              linewidth=1, figsize=(10, 6), zorder=1)
-plt.plot(X_, Y_, color="C3", lw=3, label="Fit (4th order)", zorder=2)
-
+# ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
+#               marker="o", label="Data of 5 nights", capthick=1, ecolor="dimgray",
+#               linewidth=1, figsize=(10, 6), zorder=1)
+# plt.plot(X_, Y_, color="C3", lw=3, label="Fit (4th order)", zorder=2)
+ax = df2.plot(x="Phase", y="Mag", yerr="MagErr", fmt='.k', ecolor='gray',
+              lw=1.5, ms=8, capsize=2.5, alpha=0.6, figsize=(10, 6), zorder=0)
+plt.plot(X_, Y_, markeredgecolor='b', lw=2.5, fillstyle='top', linestyle='solid',
+         label="Fit (4th order)", zorder=2)
 # ax.scatter(xdata, ydata, s=10, c='b', marker=".", label='5 Nights of Magnitude')
 # ax = df.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="", marker=".",
 # capthick=1, ecolor="gray", linewidth=1, label='5 nights of Magnitude')
@@ -73,7 +75,6 @@ rmse = df3['RMSE']
 fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k')
-
 
 # def annot_max(time, rmse, ax=None):
 #    xmax = time[np.argmin(rmse)]

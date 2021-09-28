@@ -62,10 +62,14 @@ print('Amplitude is ', sub(maxValue, minValue))
 time = df3['Period(hours)']  # convert to hours
 rmse = df3['RMSE']
 
-ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
-              marker="o", label="Data of 3 nights", capthick=1, ecolor="dimgray",
-              linewidth=1, figsize=(10, 6), zorder=1)
-df2.plot(x="Phase", y="Curve", ax=ax, color="C3", lw=2, label="Fit (4th order)", zorder=2)
+# ax = df2.plot(x="Phase", y="Mag", kind="line", yerr="MagErr", linestyle="",
+#               marker="o", label="Data of 3 nights", capthick=1, ecolor="dimgray",
+#               linewidth=1, figsize=(10, 6), zorder=1)
+# df2.plot(x="Phase", y="Curve", ax=ax, color="C3", lw=2, label="Fit (4th order)", zorder=2)
+ax = df2.plot(x="Phase", y="Mag", yerr="MagErr", fmt='.k', ecolor='gray',
+            lw=1, ms=4, capsize=1.5, alpha=0.3, figsize=(10, 6))
+df2.plot(x="Phase", y="Curve", ax=ax, markeredgecolor='b', lw=2, fillstyle='top', linestyle='solid',label="Fit ("
+                                                                                                          "$4th order)")
 
 plt.gca().invert_yaxis()
 plt.xlabel('Phase [Period = 4.79640 H]')
