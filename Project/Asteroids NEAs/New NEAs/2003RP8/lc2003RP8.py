@@ -57,7 +57,7 @@ plt.savefig('New_light_curve_2003RP8.svg', dpi=1200)
 time = df3['Period(hours)'] * 24  # convert to hours
 rmse = df3['RMSE']
 
-fig, ax = plt.subplots(figsize=(10, 7))
+fig, ax = plt.subplots(figsize=(10, 6))
 
 plt.plot(time, rmse, '-k', linewidth=2.0)
 plt.xlabel('Hours')
